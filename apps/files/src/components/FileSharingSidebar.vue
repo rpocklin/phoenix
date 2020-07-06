@@ -146,7 +146,7 @@ export default {
       const tabOptions = this.currentSidebarTab.options
 
       if (tabOptions) {
-        return tabOptions.collaboratorsCurrentPanel
+        return tabOptions.collaboratorsCurrentPanel || PANEL_SHOW
       }
 
       return PANEL_SHOW

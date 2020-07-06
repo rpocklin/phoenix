@@ -85,8 +85,8 @@ export default {
     },
 
     currentTab() {
-      if (this.currentTab) {
-        return this.currentTab.tab
+      if (this.currentSidebarTab) {
+        return this.currentSidebarTab.tab || this.defaultTab
       }
 
       return this.defaultTab
