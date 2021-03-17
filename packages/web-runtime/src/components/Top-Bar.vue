@@ -70,7 +70,7 @@ export default {
     ...mapGetters(['configuration']),
 
     isSearchDisabled() {
-      return this.configuration.options.hideSearchBar === true
+      return this.configuration.options.hideSearchBar === true || this.$route.meta.hideSearchBar
     }
   },
   methods: {
